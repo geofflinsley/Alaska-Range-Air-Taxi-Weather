@@ -1,31 +1,105 @@
 <!DOCTYPE html>
-
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Alaska Range Air Taxi Weather</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1">
+        </script>
+        <script>
+        $(window).load(function() { //start after HTML, images have loaded
+            var InfiniteRotator = {  
+                init: function() {
+                    //initial fade-in time (in milliseconds)
+                    var initialFadeIn = 0;
+                    //interval between items (in milliseconds)
+ 
+                    var itemInterval = 4000;
+ 
+                    //cross-fade time (in milliseconds)
+                    var fadeTime = 0;
+ 
+                    //count number of items
+                    var numberOfItems = $('.rotating-item').length;
+ 
+                    //set current item
+                    var currentItem = 0;
+ 
+                    //show first item
+                    $('.rotating-item').eq(currentItem).fadeIn(initialFadeIn);
+ 
+                    //loop through the items
+                    var infiniteLoop = setInterval(function(){
+                        $('.rotating-item').eq(currentItem).fadeOut(fadeTime);
+ 
+                        if(currentItem == numberOfItems -1){
+                            currentItem = 0;
+                        }
+                        else{
+                            currentItem++;
+                        }
+                        $('.rotating-item').eq(currentItem).fadeIn(fadeTime);
+ 
+                    }, itemInterval);
+                }
+            };
+ 
+            InfiniteRotator.init();
+         });
+         </script>
+</head>
 <style>
+#rotating-item-wrapper {
+                width: 1130px;
+                height: 513px;
+                margin-left: 115px;
+                margin-bottom: 25px;
+                }
+.rotating-item {
+                display: none;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 10px;
+                }
+
 </style>
-<script>
 
-</script>
+
 <body>
-<img src="https://thumbs-prod.si-cdn.com/tbpaP9PRVc1n2j7kgQfsmk2Kbas=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/Pilots-Mount-Mckinley-hero-2-631.jpg" name="airtaxi" />
-<img src="https://static.boredpanda.com/blog/wp-content/uploads/2014/12/eye_Vitosha2__880.jpg" name="sunHalos" />
-<img src="https://res.cloudinary.com/everything-everywhere/image/upload/dpr_auto,f_auto,q_auto/v1549989901/Alaska-National-Parks.jpg" name="alaskaRange4" />
-<img src="https://photos.smugmug.com/North-America/Alaska/Gates-of-the-Arctic-2016/i-8KkPTt6/0/bfc459ed/L/DSC03616-L.jpg" name="gatesOfTheArctic" />
 
-<img src="http://www.sirenji.com/uploads/allimg/130726/8_130726080000_9.jpg" name="flyover2" />
-<img src="https://www.nps.gov/dena/planyourvisit/images/20100530-Denali-089.jpg?maxwidth=1200&autorotate=false" name="snowField" />
-<img src="https://www.nps.gov/npgallery/GetAsset/38FCC2A1-1DD8-B71C-07232BC9BC3EABD6/proxy/hires?" name="flyover3" />
-<img src="http://www.alaska.org/assets/content/cache/made/photos/gallery3/var/resizes/Advice-Articles-1346595209/alaska-natural-phenomena/northern-lights/450_324_c1/alaska-natural-phenomena-Northern_Lights_Fan-Tolsana-Wendy-Johnson.jpg" name="aurora" />
-<img src="https://static.boredpanda.com/blog/wp-content/uploads/2017/01/light-pillars-night-sky-ontario-timothy-joseph-elzinga-37-58788f1c9c853__880.jpg" name="lightPillars" />
-<img src="http://www.alaska.org/assets/content/cache/made/photos/gallery3/var/resizes/Advice-Articles-1346595209/alaska-natural-phenomena/fall-tundra-foliage/450_324_c1/alaska-natural-phenomena-fall-tundra-foliage-denali-ryan-ek.jpg" name="fallTundra" />
-<img src="http://www.alaska.org/assets/content/cache/made/photos/gallery3/var/resizes/Advice-Articles-1346595209/alaska-natural-phenomena/calving-glacier/450_324_c1/Glacier_Bay_National_Park-GlacierCalving.jpg" name="calvingGlacier" />
-<img src="https://nsidc.org/sites/nsidc.org/files/images//superior-mirage-alaska-jason-ahrns-flikr-lg.jpg" name="superiorMirage" />
-<img src="https://static.boredpanda.com/blog/wp-content/uploads/2014/12/eye_Vitosha2__880.jpg" name="sunHalos" />
-<img src="https://duibe7slt06r7.cloudfront.net/Live/Binaries/ww-WW/images/Air-Taxi-Air-Charter-Service_tcm87-3299.jpg" name="cloudFly" />
+<div id="AlaskaRange" class="rotating-item" id="rotating-item-wrapper"> 
+<img src="https://res.cloudinary.com/everything-everywhere/image/upload/dpr_auto,f_auto,q_auto/v1549989901/Alaska-National-Parks.jpg" name="alaskaRange4" />
 <img src="https://cdn1.coolworks.com/production/pages/heros/117/large/HERO_Alaska.jpg?1497527758" name="alaskaRange2" />
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT87451QTfo9RyLAxMVQcmQkRgwz3i6BVznHKfBwUD3sn1EDWeT" name="alaskaRange3" />
+<img src="https://www.divergenttravelers.com/wp-content/uploads/2018/02/edit-9876-compressor.jpg" name="AlaskaRange" />
+</div>
+
+<div id="airtaxis" class="rotating-item" id="rotating-item-wrapper"> 
+<img src="https://thumbs-prod.si-cdn.com/tbpaP9PRVc1n2j7kgQfsmk2Kbas=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/Pilots-Mount-Mckinley-hero-2-631.jpg" name="airtaxi" />
+
+<img src="http://www.sirenji.com/uploads/allimg/130726/8_130726080000_9.jpg" name="flyover2" />
+<img src="https://www.nps.gov/npgallery/GetAsset/38FCC2A1-1DD8-B71C-07232BC9BC3EABD6/proxy/hires?" name="flyover3" />
+<img src="https://duibe7slt06r7.cloudfront.net/Live/Binaries/ww-WW/images/Air-Taxi-Air-Charter-Service_tcm87-3299.jpg" name="cloudFly" />
+
+</div>
+
+<div id="weather" class="rotating-item" id="rotating-item-wrapper">
+<img src="https://static.boredpanda.com/blog/wp-content/uploads/2014/12/eye_Vitosha2__880.jpg" name="sunHalos" />
+<img src="http://www.alaska.org/assets/content/cache/made/photos/gallery3/var/resizes/Advice-Articles-1346595209/alaska-natural-phenomena/northern-lights/450_324_c1/alaska-natural-phenomena-Northern_Lights_Fan-Tolsana-Wendy-Johnson.jpg" name="aurora" />
+<img src="https://static.boredpanda.com/blog/wp-content/uploads/2017/01/light-pillars-night-sky-ontario-timothy-joseph-elzinga-37-58788f1c9c853__880.jpg" name="lightPillars" />
+<img src="https://nsidc.org/sites/nsidc.org/files/images//superior-mirage-alaska-jason-ahrns-flikr-lg.jpg" name="superiorMirage" />
+<img src="https://static.boredpanda.com/blog/wp-content/uploads/2014/12/eye_Vitosha2__880.jpg" name="sunHalos" />
+</div>
+
+<div id="mountains" class="rotating-item" id="rotating-item-wrapper">
+<img src="https://photos.smugmug.com/North-America/Alaska/Gates-of-the-Arctic-2016/i-8KkPTt6/0/bfc459ed/L/DSC03616-L.jpg" name="gatesOfTheArctic" />
+<img src="https://www.nps.gov/dena/planyourvisit/images/20100530-Denali-089.jpg?maxwidth=1200&autorotate=false" name="snowField" />
+<img src="http://www.alaska.org/assets/content/cache/made/photos/gallery3/var/resizes/Advice-Articles-1346595209/alaska-natural-phenomena/fall-tundra-foliage/450_324_c1/alaska-natural-phenomena-fall-tundra-foliage-denali-ryan-ek.jpg" name="fallTundra" />
+<img src="http://www.alaska.org/assets/content/cache/made/photos/gallery3/var/resizes/Advice-Articles-1346595209/alaska-natural-phenomena/calving-glacier/450_324_c1/Glacier_Bay_National_Park-GlacierCalving.jpg" name="calvingGlacier" />
 <img src="https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_250,q_75,w_500/https://assets.simpleviewinc.com/simpleview/image/upload/crm/anchorage/2016-regal-air-glacier-mountains0_31a93ec1-5056-a36a-0a22648463b55629.jpg" name="glacier" />
 <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/93e76f67886621.5b497a4d480c8.jpg" name="boatGlacier" />
 <img src="https://photos.smugmug.com/North-America/Alaska/Glacier-Bay-National-Park-2016/i-n7sLGgB/0/8226fcc2/X3/DSC05402-X3.jpg" name="glacierBay" />
+</div>
+
 
 </body>
 
