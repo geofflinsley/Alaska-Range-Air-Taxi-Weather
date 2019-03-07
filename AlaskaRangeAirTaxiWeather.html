@@ -59,11 +59,11 @@ display: -ms-grid;
 grid-template-columns: 2fr 1fr;
 }
 
-#left {
+.left {
 grid-column: 1;
 }
 
-#right {
+.right {
 grid-column: 2; 
 }
 
@@ -102,8 +102,9 @@ width: 100%;
 height: 110%;
 background-position: center;
 transform: scale(1.237, 1.237);
-margin-top: 35px;
+margin-top: 0px;
 min-width: 1250px;
+min-height: 600px;
 z-index: 1;
 }
 
@@ -177,12 +178,6 @@ td {
 text-align: center;
 }
 
-small {
-margin: 80px;
-padding: 80px;
-z-index: 1;
-}
-
 #p {
 text-align: center;  
 margin: 35px;
@@ -215,12 +210,12 @@ Geoff Linsley
 </td>
 <td></td>
 <td>ALASKA RANGE AIR TAXI WEATHER</td>
-<td>  </td>
+<td></td>
 <td>geoff@geofflinsley.com</td>
 </tr></table>
 
 <table id="menu"><tr>
-<td><a href=""> ABOUT ME </a></td><td><a href=""> AN ALASKA RANGE AIR TAXI WEATHER FORECAST </a></td><td><a href=""> CONTACT ME </a></td>
+<td><a href="#airtaxis"> ABOUT ME </a></td><td><a href="#weather"> AN ALASKA RANGE AIR TAXI WEATHER FORECAST </a></td><td><a href="#mountains"> CONTACT ME </a></td>
 </tr></table>
 
 <div id="AlaskaRange" id="rotating-item-wrapper-a"> 
@@ -232,16 +227,17 @@ Why pay for forecasts? There is seldom much value in a free mountain weather for
 Several potential money and time-saving benefits open up by trusting me with your forecasting. Getting a second opinion regarding flight decisions could save lives, as well as costs related to abandoning a mission due to the weather. All air taxi operators need to keep an eye on the weather. Why devote half an hour or more of work time per day to monitoring the weather when all that need be done is to look at a report a couple minutes long prepared specifically for your company? What I’m offering is the custom tailored benefits of an in-house Meteorologist for a tiny fraction of the cost of a full-time hire.
 </p>
 </div>
-<div id="airtaxis" id="rotating-item-wrapper-b"> 
+
+<div id="airtaxis" id="rotating-item-wrapper-b" class="grid"> 
 <br /><br />
 <h1>ABOUT ME</h1>
-<div class="grid" id="left" style="transform: scale(0.8, 0.8)">
+<div class="left" style="transform: scale(0.8, 0.8)">
 <img class="rotating-item" src="https://thumbs-prod.si-cdn.com/tbpaP9PRVc1n2j7kgQfsmk2Kbas=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/Pilots-Mount-Mckinley-hero-2-631.jpg" name="airtaxi" width="700px" height="400px" style="clip-path: ellipse(350px 225px at 40% 40%)" />
 <img class="rotating-item" src="http://www.sirenji.com/uploads/allimg/130726/8_130726080000_9.jpg" name="flyover2"  width="700px" height="400px" />
 <img class="rotating-item" src="https://www.nps.gov/npgallery/GetAsset/38FCC2A1-1DD8-B71C-07232BC9BC3EABD6/proxy/hires?" name="flyover3"  width="700px" height="400px" />
 <img class="rotating-item" src="https://duibe7slt06r7.cloudfront.net/Live/Binaries/ww-WW/images/Air-Taxi-Air-Charter-Service_tcm87-3299.jpg" name="cloudFly" width="700px" height="400px" />
 </div>
-<p id="p" class="grid" id="right">Consultant Forecast Meteorologist Geoff Linsley
+<p id="p" class="right">Consultant Forecast Meteorologist Geoff Linsley
 <br />
 5 years of professional forecasting experience
 <br /><br />
@@ -260,7 +256,7 @@ Engineers have trusted me to get rain totals correct a day to a week in advance.
 <div id="weather" id="rotating-item-wrapper-c">
 <h1 class="originalsize">AN ALASKA RANGE RANGE AIR TAXI<br />
 WEATHER FORECAST</h1>
-<p class="originalsize" id="p" style="font-size: 13px; text-align: center; line-height: 14px">
+<p class="originalsize" id="p" style="font-size: 13px; line-height: 14px; letter-spacing: 1px">
 DISTRICT <em>X</em>
 <br /><br /><br />
 CONFIDENCE:
@@ -314,7 +310,7 @@ Turbulence alerts:
 </body>
 <footer>
 <table id="menu"><tr>
-<td><a href=""> ABOUT ME </a></td><td><a href=""> AN ALASKA RANGE AIR TAXI WEATHER FORECAST </a></td><td><a href=""> CONTACT ME </a></td>
+<td><a href="#airtaxis"> ABOUT ME </a></td><td><a href="#weather"> AN ALASKA RANGE AIR TAXI WEATHER FORECAST </a></td><td><a href="#mountains"> CONTACT ME </a></td>
 </tr></table>
 <p style="color: navy; text-align: center"><strong>© Copyright 2019</strong></p>
 <table><tr>
