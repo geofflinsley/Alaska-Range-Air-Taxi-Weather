@@ -54,38 +54,46 @@ background: snow;
 
 #AlaskaRange {
 background-image: url("https://res.cloudinary.com/everything-everywhere/image/upload/dpr_auto,f_auto,q_auto/v1549989901/Alaska-National-Parks.jpg");
-color: charcoal;
 background-size: auto;
 background-repeat: no-repeat;
 width: 100%;
 height: 100%;
+background-position: center;
+transform: scale(1.1, 1.1);
+min-height: 700px;
 }
 
 #airtaxis {
 background-image: url("https://cdn1.coolworks.com/production/pages/heros/117/large/HERO_Alaska.jpg?1497527758");
-color: snow;
 background-size: auto;
 background-repeat: no-repeat;
 width: 100%;
 height: 100%;
+background-position: center;
+transform: scale(1.1, 1.1);
 }
 
 #weather {
 background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/93e76f67886621.5b497a4d480c8.jpg");
-color: snow;
 background-size: auto;
 background-repeat: no-repeat;
 width: 100%;
 height: 100%;
+background-position: center;
+transform: scale(1.3, 1.3);
+margin-top: 82px;
+min-width: 1250px;
 }
 
 #mountains {
-background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/93e76f67886621.5b497a4d480c8.jpg");
-color: snow;
+background-image: url("https://photos.smugmug.com/North-America/Alaska/Gates-of-the-Arctic-2016/i-8KkPTt6/0/bfc459ed/L/DSC03616-L.jpg");
 background-size: auto;
 background-repeat: no-repeat;
 width: 100%;
 height: 100%;
+background-position: center;
+transform: scale(1.95, 1.75);
+margin-top: 240px;
 }
 
 #rotating-item-wrapper-a {
@@ -101,7 +109,7 @@ height: 100%;
                 margin-bottom: 25px;
                 }
 #rotating-item-wrapper-c {
-                 width: 100%;
+                width: 100%;
                 height: 100%;
                 margin-left: 115px;
                 margin-bottom: 25px;
@@ -109,7 +117,7 @@ height: 100%;
 #rotating-item-wrapper-d {
                 width: 100%;
                  height: 100%;
-               margin-left: 115px;
+                margin-left: 115px;
                 margin-bottom: 25px;
                 }
 
@@ -119,26 +127,56 @@ height: 100%;
                 margin-right: auto;
                 padding-top: 10px;
                   }
-                  
+
 h1 {
 text-align: center;
-color: rgb(30, 30, 181);
+color: rgb(30, 30, 151);
+font-size: 45px;
+font-weight: bold;
+text-shadow: -1px -1px snow;
+transform: scale(1.0, 1.0);
+margin: 30px;
 }
 
 #header {
 background: rgb(01, 01, 16);
-color: white;
+color: snow;
 width: 100%;
+font-weight: bold;
 }
 
 #menu {
 width: 100%;
 color: black;
 font-size: 20px;
+font-weight: bold;
 }
 
 td {
 text-align: center;
+}
+
+small {
+transform: scale(1.0, 1.0);
+margin: 80px;
+padding: 80px;
+z-index: 1;
+}
+
+#p {
+font-weight: bold;
+transform: scale(1.0, 1.0);
+margin-top: 0px;
+padding-top; 0px;
+margin: 40px;
+padding: 40px;
+color: rgb(240, 240, 240);
+text-shadow: -1px 1px navy;
+}
+
+footer {
+margin-top: 175px;
+margin-bottom: 0px; 
 }
 
 </style>
@@ -156,12 +194,12 @@ Geoff Linsley
 </tr></table>
 
 <table id="menu"><tr>
-<td><a href=""> WHAT I DO </a></td><td><a href=""> ABOUT ME </a></td><td><a href=""> AN ALASKA RANGE AIR TAXI WEATHER FORECAST </a></td><td><a href=""> CONTACT ME </a></td>
+<td><a href=""> ABOUT ME </a></td><td><a href=""> AN ALASKA RANGE AIR TAXI WEATHER FORECAST </a></td><td><a href=""> CONTACT ME </a></td>
 </tr></table>
 
 <div id="AlaskaRange" id="rotating-item-wrapper-a"> 
 <h1>WHAT I DO</h1>
-<p>Greetings! This is Associate Meteorologist for West Coast Weather Geoff Linsley, coming to you with five years of professional experience forecasting the weather of the West Coast but, today, as a private consultant branching off into a separate, new project.
+<p id="p">Greetings! This is Associate Meteorologist for West Coast Weather Geoff Linsley, coming to you with five years of professional experience forecasting the weather of the West Coast but, today, as a private consultant branching off into a separate, new project.
 <br /><br />
 Why pay for forecasts? There is seldom much value in a free mountain weather forecast. Automated computer models can provide data for all locations but they can’t consider the big picture: the weather dynamics of the surrounding areas, i.e. major troughs, cyclones forming in the Gulf of Alaska or the jet stream. Beyond geolocational data from automated systems, I examine tools such as forecast ensembles, skew-T diagrams, verification sata, the ECMWF (European), the US GFS, the Global Canadian, the Global German, the UKMET (British) and local models.
 <br /><br />
@@ -169,15 +207,19 @@ Several potential money and time-saving benefits open up by trusting me with you
 </p>
 </div>
 <div id="airtaxis" id="rotating-item-wrapper-b"> 
+<br /><br />
 <h1>ABOUT ME</h1>
+<p id="p"></p>
 <img class="rotating-item" src="https://thumbs-prod.si-cdn.com/tbpaP9PRVc1n2j7kgQfsmk2Kbas=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/Pilots-Mount-Mckinley-hero-2-631.jpg" name="airtaxi" width="700px" height="400px" />
 <img class="rotating-item" src="http://www.sirenji.com/uploads/allimg/130726/8_130726080000_9.jpg" name="flyover2"  width="700px" height="400px" />
 <img class="rotating-item" src="https://www.nps.gov/npgallery/GetAsset/38FCC2A1-1DD8-B71C-07232BC9BC3EABD6/proxy/hires?" name="flyover3"  width="700px" height="400px" />
 <img class="rotating-item" src="https://duibe7slt06r7.cloudfront.net/Live/Binaries/ww-WW/images/Air-Taxi-Air-Charter-Service_tcm87-3299.jpg" name="cloudFly" width="700px" height="400px" />
 </div>
 <div id="weather" id="rotating-item-wrapper-c">
-<h1>AN ALASKA RANGE RANGE AIR TAXI WEATHER FORECAST</h1>
-<p>District X
+<h1>AN ALASKA RANGE RANGE AIR TAXI<br />
+WEATHER FORECAST</h1>
+<p id="p" style="font-size: 13px; text-align: center; line-height: 14px">
+DISTRICT <em>X</em>
 <br /><br /><br />
 CONFIDENCE:
 (scale of 1 [lowest] to 10 [highest] based on model uncertainty)
@@ -192,21 +234,21 @@ General daily forecast summary issued before operating hours
 ZONE:
 <br /><br />
 Sunrise/Sunset:
-<br /><br />
+<br />
 Surface Winds:
-<br /><br />
+<br />
 925 mb Winds:
-<br /><br />
+<br />
 850 mb Winds:
-<br /><br /> 
+<br /> 
 700 mb Winds:
-<br /><br />
+<br />
 Cloud Summary:
-<br /><br />
+<br />
 Surface High Temperature:
-<br /><br />
+<br />
 Surface Low Temperature:
-<br /><br />
+<br />
 Precipitation: 
 <br /><br />
 ALERTS:
@@ -219,7 +261,6 @@ Lightning alerts:
 <br />
 Turbulence alerts: 
 <br /><br /><br />
-This forecast is based on computer-generated weather data from government agencies and global Numerical Weather Prediction (NWP) forecast models. NWP are imperfect given the chaotic nature of the equations of the atmosphere and the limitations of humanity’s present understanding of it. Weather can change quickly and unforeseeably, even when using the most cutting edge of forecasting tools. While I do my best to give each forecast the respect it deserves, weather can cause damages in many forms and I cannot be held liable for losses. All client liabilities are expressly responsibilities of the client managing the property.
 </p>
 <img class="rotating-item" src="https://static.boredpanda.com/blog/wp-content/uploads/2014/12/eye_Vitosha2__880.jpg" name="sunHalos" width="700px" height="500px" />
 <img class="rotating-item" src="http://www.alaska.org/assets/content/cache/made/photos/gallery3/var/resizes/Advice-Articles-1346595209/alaska-natural-phenomena/northern-lights/450_324_c1/alaska-natural-phenomena-Northern_Lights_Fan-Tolsana-Wendy-Johnson.jpg" name="aurora" width="700px" height="500px"  />
@@ -228,17 +269,22 @@ This forecast is based on computer-generated weather data from government agenci
 <img class="rotating-item" src="https://static.boredpanda.com/blog/wp-content/uploads/2014/12/eye_Vitosha2__880.jpg" name="sunHalos" width="700px" height="500px" />
 </div>
 <div id="mountains" id="rotating-item-wrapper-d">
+<br />
 <h1>CONTACT ME</h1>
-<p>Already trusting a Meteorologist to cater to your weather forecasting needs? We likely can offer fairer prices to do just as good or better work. Please contact me at geoff@geofflinsley.com.</p>
-<img class="rotating-item" src="https://photos.smugmug.com/North-America/Alaska/Gates-of-the-Arctic-2016/i-8KkPTt6/0/bfc459ed/L/DSC03616-L.jpg" name="gatesOfTheArctic" />
+<br /><br /><br /><br />
+<p id="p" style="text-align: center; font-size: 11px">Already trusting a Meteorologist to cater to your weather forecasting needs?<br />I likely can offer fairer prices to do just as good or better work.<br />Please contact me at: geoff@geofflinsley.com</p>
 <img class="rotating-item" src="https://www.nps.gov/dena/planyourvisit/images/20100530-Denali-089.jpg?maxwidth=1200&autorotate=false" name="snowField" />
-<img class="rotating-item" src="http://www.alaska.org/assets/content/cache/made/photos/gallery3/var/resizes/Advice-Articles-1346595209/alaska-natural-phenomena/fall-tundra-foliage/450_324_c1/alaska-natural-phenomena-fall-tundra-foliage-denali-ryan-ek.jpg" name="fallTundra" width="500px" height="800px"  />
-<img class="rotating-item" src="http://www.alaska.org/assets/content/cache/made/photos/gallery3/var/resizes/Advice-Articles-1346595209/alaska-natural-phenomena/calving-glacier/450_324_c1/Glacier_Bay_National_Park-GlacierCalving.jpg" name="calvingGlacier" width="500px" height="800px"  />
-<img class="rotating-item" src="https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_250,q_75,w_500/https://assets.simpleviewinc.com/simpleview/image/upload/crm/anchorage/2016-regal-air-glacier-mountains0_31a93ec1-5056-a36a-0a22648463b55629.jpg" name="glacier" width="500px" height="800px"  />
-<img class="rotating-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT87451QTfo9RyLAxMVQcmQkRgwz3i6BVznHKfBwUD3sn1EDWeT" name="alaskaRange3" width="500px" height="800px" />
-<img class="rotating-item" src="https://photos.smugmug.com/North-America/Alaska/Glacier-Bay-National-Park-2016/i-n7sLGgB/0/8226fcc2/X3/DSC05402-X3.jpg" name="glacierBay" width="500px" height="800px" />
+<img class="rotating-item" src="http://www.alaska.org/assets/content/cache/made/photos/gallery3/var/resizes/Advice-Articles-1346595209/alaska-natural-phenomena/fall-tundra-foliage/450_324_c1/alaska-natural-phenomena-fall-tundra-foliage-denali-ryan-ek.jpg" name="fallTundra" width="400px" height="500px"  />
+<img class="rotating-item" src="http://www.alaska.org/assets/content/cache/made/photos/gallery3/var/resizes/Advice-Articles-1346595209/alaska-natural-phenomena/calving-glacier/450_324_c1/Glacier_Bay_National_Park-GlacierCalving.jpg" name="calvingGlacier" width="400px" height="500px"  />
+<img class="rotating-item" src="https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_250,q_75,w_500/https://assets.simpleviewinc.com/simpleview/image/upload/crm/anchorage/2016-regal-air-glacier-mountains0_31a93ec1-5056-a36a-0a22648463b55629.jpg" name="glacier" width="400px" height="500px"  />
+<img class="rotating-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT87451QTfo9RyLAxMVQcmQkRgwz3i6BVznHKfBwUD3sn1EDWeT" name="alaskaRange3" width="400px" height="500px" />
+<img class="rotating-item" src="https://photos.smugmug.com/North-America/Alaska/Glacier-Bay-National-Park-2016/i-n7sLGgB/0/8226fcc2/X3/DSC05402-X3.jpg" name="glacierBay" width="400px" height="500px" />
 </div>
-
-
 </body>
+<footer>
+<table id="menu"><tr>
+<td><a href=""> ABOUT ME </a></td><td><a href=""> AN ALASKA RANGE AIR TAXI WEATHER FORECAST </a></td><td><a href=""> CONTACT ME </a></td>
+</tr></table>
+<p style="text-align: center; color: navy"><strong>© Copyright 2019</strong></p>
+</footer
 
